@@ -42,3 +42,7 @@
     cursor: pointer;
     margin-bottom: 0.5rem;
 }
+
+.card__grades{
+    color: rgb(2, 48, 66);
+}

@@ -45,12 +45,12 @@ const CardWeather = ({lon, lat}) => {
                     <div>
                         <h3>&#34;{weather?.weather[0].description}&#34;</h3>
                         <ul className='card__list'>
-                            <li className='card__list__item' ><span>Wind Speed</span>{weather?.wind.speed}</li>
-                            <li className='card__list__item'><span>Clouds</span>{weather?.clouds.all}</li>
-                            <li className='card__list__item'><span>Pressure</span>{weather?.main.pressure}</li>
+                            <li className='card__list__item' ><span>Wind Speed: </span>{weather?.wind.speed}</li>
+                            <li className='card__list__item'><span>Clouds: </span>{weather?.clouds.all}</li>
+                            <li className='card__list__item'><span>Pressure: </span>{weather?.main.pressure}</li>
                         </ul>
                     </div>
-                    <h2>{isCelsius ? temperature?.celsius : temperature?.farenheit}</h2>
+                    <h2 className='card__grades' >{isCelsius ? temperature?.celsius : temperature?.farenheit}</h2>
                     <button className='card__buttom' onClick={handleClick}>{isCelsius ? `Change to °F` : `Change to °C`} </button>
                 </div>
             </article>
